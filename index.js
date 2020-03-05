@@ -1,3 +1,4 @@
+/*
 //OBJECTS
 const obj={
   Name:"A",
@@ -91,3 +92,23 @@ let salary=obj.getSalary();
 console.log('Marks:',salary);
 obj.setSalary(35000);
 console.log(obj.getSalary());
+*/
+//////////////////////////////
+//Object creation with function
+
+function Person(id)
+{
+  let _id=id;
+  this.name='hi';
+  this.setId=function(id)
+  {
+    _id=id;
+  }
+  this.getId=function()
+  {
+    return _id;
+  }
+}
+const person=new Person('10');
+person.setId(2)
+console.log(person.getId())
